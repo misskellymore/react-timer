@@ -2,11 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 
 function App() {
+
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+
+  }, [])
+
   return (
     <div className="app">
       <div className='time-circle'>
         <div className="time">
-          00:04
+          {seconds}
         </div>
       </div>
       <div className="buttons">
